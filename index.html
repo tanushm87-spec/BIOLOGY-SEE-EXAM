@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Biology for Engineers - Full Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🧬 Biology for Engineers Quiz</h1>
+    <div id="quiz">
+      <div id="question-container">
+        <h2 id="question-text"></h2>
+        <div id="options"></div>
+      </div>
+
+      <div class="navigation">
+        <button id="prev-btn">Previous</button>
+        <button id="next-btn">Next</button>
+        <button id="submit-btn" style="display:none;">Submit Quiz</button>
+      </div>
+    </div>
+
+    <div id="result" style="display:none;">
+      <h2>Your Score: <span id="score"></span></h2>
+      <button onclick="restartQuiz()">Restart Quiz</button>
+    </div>
+  </div>
+
+  <script src="questions.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
